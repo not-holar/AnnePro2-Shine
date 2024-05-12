@@ -13,8 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
     - uses: carlosperate/arm-none-eabi-gcc-action@v1
     - run: arm-none-eabi-gcc --version
     - name: make
